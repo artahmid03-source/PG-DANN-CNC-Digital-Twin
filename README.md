@@ -1,3 +1,5 @@
+<img width="3270" height="1410" alt="fig3_parity_plots" src="https://github.com/user-attachments/assets/725878b3-b0b9-4a08-af7f-44126f59f941" />
+<img width="3160" height="1830" alt="fig6_iiot_digital_twin_dashboard" src="https://github.com/user-attachments/assets/e82fb53c-12bb-4c80-b057-33f04a51e3db" />
 # Physics-Guided Digital Twin for CNC Tool Wear ⚙️
 
 Bridging metal-cutting physics with deep learning for Zero-Defect Manufacturing (ZDM).
