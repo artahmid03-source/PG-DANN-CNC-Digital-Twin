@@ -1,0 +1,29 @@
+version: '3.9'
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2.0
+    container_name: cnc_mqtt_broker
+    ports:
+      - "1883:1883"
+    restart: unless-stopped
+
+  influxdb3:
+    image: quay.io/influxdb/influxdb3-core:latest
+    container_name: cnc_influxdb3_tsdb
+    ports:
+      - "8181:8181"
+    command: serve --node-id cnc_node_01 --object-store file --data-dir /var/lib/influxdb3
+    volumes:
+      - ./influx3_data:/var/lib/influxdb3
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana-oss:11.2.0
+    container_name: cnc_grafana_twin
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-mqtt-datasource
+    depends_on:
+      - influxdb3
+    restart: unless-stopped

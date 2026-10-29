@@ -1,0 +1,55 @@
+{
+  "vb_eol_threshold_mm": 0.35,
+  "fixed_schedule_utilization_pct": 72.0,
+  "pg_dann_utilization_pct": 94.2,
+  "utilization_gain_pct": 22.2,
+  "annual_edges_saved_per_spindle": 389,
+  "annual_inserts_saved_per_spindle": 97.2,
+  "wc_co_mass_saved_kg_yr": 0.924,
+  "scrap_workpieces_prevented_yr": 48,
+  "total_co2e_reduction_kg_yr": 707.9,
+  "table_records": [
+    {
+      "Task": "A",
+      "Model": "1D-CNN (Source Only)",
+      "Mean_Wasted_Passes_Per_Case": 0.14,
+      "Mean_Scrap_Risk_Passes_Per_Case": 0.71,
+      "Effective_Safe_Tool_Utilization_Pct": 91.1
+    },
+    {
+      "Task": "A",
+      "Model": "Vanilla DANN",
+      "Mean_Wasted_Passes_Per_Case": 0.0,
+      "Mean_Scrap_Risk_Passes_Per_Case": 1.29,
+      "Effective_Safe_Tool_Utilization_Pct": 89.1
+    },
+    {
+      "Task": "A",
+      "Model": "PG-DANN (Proposed)",
+      "Mean_Wasted_Passes_Per_Case": 0.71,
+      "Mean_Scrap_Risk_Passes_Per_Case": 0.0,
+      "Effective_Safe_Tool_Utilization_Pct": 88.2
+    },
+    {
+      "Task": "B",
+      "Model": "1D-CNN (Source Only)",
+      "Mean_Wasted_Passes_Per_Case": 1.75,
+      "Mean_Scrap_Risk_Passes_Per_Case": 0.0,
+      "Effective_Safe_Tool_Utilization_Pct": 76.4
+    },
+    {
+      "Task": "B",
+      "Model": "Vanilla DANN",
+      "Mean_Wasted_Passes_Per_Case": 3.38,
+      "Mean_Scrap_Risk_Passes_Per_Case": 0.0,
+      "Effective_Safe_Tool_Utilization_Pct": 62.7
+    },
+    {
+      "Task": "B",
+      "Model": "PG-DANN (Proposed)",
+      "Mean_Wasted_Passes_Per_Case": 0.5,
+      "Mean_Scrap_Risk_Passes_Per_Case": 0.0,
+      "Effective_Safe_Tool_Utilization_Pct": 93.0
+    }
+  ]
+}

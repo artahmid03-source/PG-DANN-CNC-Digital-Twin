@@ -1,0 +1,12 @@
+{
+  "edge_node": "Matsuura_MC510V_Gateway_01",
+  "window_duration_ms": 2000.0,
+  "nn_p50_ms": 0.517,
+  "nn_p95_ms": 0.711,
+  "nn_p99_ms": 0.821,
+  "e2e_p50_ms": 7.351,
+  "e2e_p95_ms": 8.995,
+  "e2e_p99_ms": 9.596,
+  "duty_cycle_pct": 0.3817,
+  "throughput_hz": 131.0
+}

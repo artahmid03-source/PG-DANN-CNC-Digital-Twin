@@ -1,0 +1,26 @@
+{
+  "title": "CNC Tool Wear Physics-Guided Digital Twin (PG-DANN)",
+  "uid": "pg-dann-cnc-twin-v1",
+  "schemaVersion": 39,
+  "refresh": "1s",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Real-Time Flank Wear VB(t) vs ISO 8688-1 Thresholds (0.30 mm EoL)",
+      "type": "timeseries",
+      "datasource": "InfluxDB3-FlightSQL"
+    },
+    {
+      "id": 2,
+      "title": "2D FEA Interface Temperature T_int (\u00b0C) & Contact Stress sigma_n (MPa)",
+      "type": "gauge",
+      "datasource": "InfluxDB3-FlightSQL"
+    },
+    {
+      "id": 3,
+      "title": "End-to-End Edge + MQTT Telemetry Latency (ms)",
+      "type": "stat",
+      "datasource": "InfluxDB3-FlightSQL"
+    }
+  ]
+}
