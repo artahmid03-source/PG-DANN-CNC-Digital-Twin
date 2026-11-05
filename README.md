@@ -1,5 +1,3 @@
-<img width="1795" height="831" alt="Grafana Live Dashboard" src="https://github.com/user-attachments/assets/744413d3-5362-4339-9092-cba2d085f6cd" />
-
 # Physics-Guided Digital Twin for CNC Tool Wear ⚙️
 
 Bridging metal-cutting physics with deep learning for Zero-Defect Manufacturing (ZDM).
